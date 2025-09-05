@@ -1,0 +1,55 @@
+
+        body {
+            background-image: url(../../images/cover.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            color: #084332;
+            text-align: center;
+            font-family: "Shadows Into Light", cursive;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .principal {
+            &__titulo {
+                font-weight: 600;
+                font-size: 5.5em;
+                padding-top: 90px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                line-height: 65px;
+            }
+
+            &__data {
+                font-style: italic;
+                font-size: 1.5em;
+            }
+
+            &__contagem {
+                font-size: 2.5em;
+                padding-top: 40px;
+            }
+
+            &__endereco {
+                font-size: 1.5em;
+                padding-top: 35px;
+            }
+
+            @media (max-width: 640px) {
+                &__titulo {
+                    font-size: 3em;
+                    padding-top: 310px;
+                }
+                
+                &__data {
+                    font-size: 1em;
+                    margin-top: 0;
+                }
+
+                &__contagem {
+                    font-size: 1.5em;
+                    padding-top: 24px;
+                }
+            }
+        }
